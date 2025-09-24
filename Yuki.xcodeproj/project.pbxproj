@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65BCD82C2E339F3800DE27F9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD82B2E339F3800DE27F9 /* FirebaseAnalytics */; };
+		65BCD82E2E339F3800DE27F9 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD82D2E339F3800DE27F9 /* FirebaseAnalyticsCore */; };
+		65BCD8302E339F3800DE27F9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD82F2E339F3800DE27F9 /* FirebaseAuth */; };
+		65BCD8322E339F3800DE27F9 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD8312E339F3800DE27F9 /* FirebaseCore */; };
+		65BCD8342E339F3800DE27F9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD8332E339F3800DE27F9 /* FirebaseDatabase */; };
+		65BCD8362E339F3800DE27F9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD8352E339F3800DE27F9 /* FirebaseFirestore */; };
+		65BCD8382E339F3800DE27F9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 65BCD8372E339F3800DE27F9 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65BCD7F72E339D6700DE27F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65BCD7E02E339D6500DE27F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65BCD7E72E339D6500DE27F9;
+			remoteInfo = Yuki;
+		};
+		65BCD8012E339D6700DE27F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65BCD7E02E339D6500DE27F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65BCD7E72E339D6500DE27F9;
+			remoteInfo = Yuki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65BCD7E82E339D6500DE27F9 /* Yuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BCD7F62E339D6700DE27F9 /* YukiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YukiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BCD8002E339D6700DE27F9 /* YukiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YukiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		65D232572E365314006B39ED /* Exceptions for "Yuki" folder in "Yuki" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 65BCD7E72E339D6500DE27F9 /* Yuki */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		65BCD7EA2E339D6500DE27F9 /* Yuki */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				65D232572E365314006B39ED /* Exceptions for "Yuki" folder in "Yuki" target */,
+			);
+			path = Yuki;
+			sourceTree = "<group>";
+		};
+		65BCD7F92E339D6700DE27F9 /* YukiTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = YukiTests;
+			sourceTree = "<group>";
+		};
+		65BCD8032E339D6700DE27F9 /* YukiUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = YukiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65BCD7E52E339D6500DE27F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BCD8342E339F3800DE27F9 /* FirebaseDatabase in Frameworks */,
+				65BCD82C2E339F3800DE27F9 /* FirebaseAnalytics in Frameworks */,
+				65BCD8302E339F3800DE27F9 /* FirebaseAuth in Frameworks */,
+				65BCD8322E339F3800DE27F9 /* FirebaseCore in Frameworks */,
+				65BCD8382E339F3800DE27F9 /* FirebaseStorage in Frameworks */,
+				65BCD82E2E339F3800DE27F9 /* FirebaseAnalyticsCore in Frameworks */,
+				65BCD8362E339F3800DE27F9 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BCD7F32E339D6700DE27F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BCD7FD2E339D6700DE27F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65BCD7DF2E339D6500DE27F9 = {
+			isa = PBXGroup;
+			children = (
+				65BCD7EA2E339D6500DE27F9 /* Yuki */,
+				65BCD7F92E339D6700DE27F9 /* YukiTests */,
+				65BCD8032E339D6700DE27F9 /* YukiUITests */,
+				65BCD7E92E339D6500DE27F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65BCD7E92E339D6500DE27F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65BCD7E82E339D6500DE27F9 /* Yuki.app */,
+				65BCD7F62E339D6700DE27F9 /* YukiTests.xctest */,
+				65BCD8002E339D6700DE27F9 /* YukiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65BCD7E72E339D6500DE27F9 /* Yuki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BCD80A2E339D6700DE27F9 /* Build configuration list for PBXNativeTarget "Yuki" */;
+			buildPhases = (
+				65BCD7E42E339D6500DE27F9 /* Sources */,
+				65BCD7E52E339D6500DE27F9 /* Frameworks */,
+				65BCD7E62E339D6500DE27F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				65BCD7EA2E339D6500DE27F9 /* Yuki */,
+			);
+			name = Yuki;
+			packageProductDependencies = (
+				65BCD82B2E339F3800DE27F9 /* FirebaseAnalytics */,
+				65BCD82D2E339F3800DE27F9 /* FirebaseAnalyticsCore */,
+				65BCD82F2E339F3800DE27F9 /* FirebaseAuth */,
+				65BCD8312E339F3800DE27F9 /* FirebaseCore */,
+				65BCD8332E339F3800DE27F9 /* FirebaseDatabase */,
+				65BCD8352E339F3800DE27F9 /* FirebaseFirestore */,
+				65BCD8372E339F3800DE27F9 /* FirebaseStorage */,
+			);
+			productName = Yuki;
+			productReference = 65BCD7E82E339D6500DE27F9 /* Yuki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65BCD7F52E339D6700DE27F9 /* YukiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BCD80D2E339D6700DE27F9 /* Build configuration list for PBXNativeTarget "YukiTests" */;
+			buildPhases = (
+				65BCD7F22E339D6700DE27F9 /* Sources */,
+				65BCD7F32E339D6700DE27F9 /* Frameworks */,
+				65BCD7F42E339D6700DE27F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65BCD7F82E339D6700DE27F9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				65BCD7F92E339D6700DE27F9 /* YukiTests */,
+			);
+			name = YukiTests;
+			packageProductDependencies = (
+			);
+			productName = YukiTests;
+			productReference = 65BCD7F62E339D6700DE27F9 /* YukiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65BCD7FF2E339D6700DE27F9 /* YukiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BCD8102E339D6700DE27F9 /* Build configuration list for PBXNativeTarget "YukiUITests" */;
+			buildPhases = (
+				65BCD7FC2E339D6700DE27F9 /* Sources */,
+				65BCD7FD2E339D6700DE27F9 /* Frameworks */,
+				65BCD7FE2E339D6700DE27F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65BCD8022E339D6700DE27F9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				65BCD8032E339D6700DE27F9 /* YukiUITests */,
+			);
+			name = YukiUITests;
+			packageProductDependencies = (
+			);
+			productName = YukiUITests;
+			productReference = 65BCD8002E339D6700DE27F9 /* YukiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65BCD7E02E339D6500DE27F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					65BCD7E72E339D6500DE27F9 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					65BCD7F52E339D6700DE27F9 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 65BCD7E72E339D6500DE27F9;
+					};
+					65BCD7FF2E339D6700DE27F9 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 65BCD7E72E339D6500DE27F9;
+					};
+				};
+			};
+			buildConfigurationList = 65BCD7E32E339D6500DE27F9 /* Build configuration list for PBXProject "Yuki" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65BCD7DF2E339D6500DE27F9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 65BCD7E92E339D6500DE27F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65BCD7E72E339D6500DE27F9 /* Yuki */,
+				65BCD7F52E339D6700DE27F9 /* YukiTests */,
+				65BCD7FF2E339D6700DE27F9 /* YukiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65BCD7E62E339D6500DE27F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BCD7F42E339D6700DE27F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BCD7FE2E339D6700DE27F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65BCD7E42E339D6500DE27F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BCD7F22E339D6700DE27F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BCD7FC2E339D6700DE27F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65BCD7F82E339D6700DE27F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65BCD7E72E339D6500DE27F9 /* Yuki */;
+			targetProxy = 65BCD7F72E339D6700DE27F9 /* PBXContainerItemProxy */;
+		};
+		65BCD8022E339D6700DE27F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65BCD7E72E339D6500DE27F9 /* Yuki */;
+			targetProxy = 65BCD8012E339D6700DE27F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65BCD8082E339D6700DE27F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65BCD8092E339D6700DE27F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		65BCD80B2E339D6700DE27F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yuki/Yuki.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UV49A6NQ39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yuki/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tesudei.Yuki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		65BCD80C2E339D6700DE27F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yuki/Yuki.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UV49A6NQ39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yuki/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tesudei.Yuki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		65BCD80E2E339D6700DE27F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tesudei.YukiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yuki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yuki";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		65BCD80F2E339D6700DE27F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tesudei.YukiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yuki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yuki";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		65BCD8112E339D6700DE27F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tesudei.YukiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = Yuki;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		65BCD8122E339D6700DE27F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tesudei.YukiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = Yuki;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65BCD7E32E339D6500DE27F9 /* Build configuration list for PBXProject "Yuki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BCD8082E339D6700DE27F9 /* Debug */,
+				65BCD8092E339D6700DE27F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65BCD80A2E339D6700DE27F9 /* Build configuration list for PBXNativeTarget "Yuki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BCD80B2E339D6700DE27F9 /* Debug */,
+				65BCD80C2E339D6700DE27F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65BCD80D2E339D6700DE27F9 /* Build configuration list for PBXNativeTarget "YukiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BCD80E2E339D6700DE27F9 /* Debug */,
+				65BCD80F2E339D6700DE27F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65BCD8102E339D6700DE27F9 /* Build configuration list for PBXNativeTarget "YukiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BCD8112E339D6700DE27F9 /* Debug */,
+				65BCD8122E339D6700DE27F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65BCD82B2E339F3800DE27F9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		65BCD82D2E339F3800DE27F9 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		65BCD82F2E339F3800DE27F9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		65BCD8312E339F3800DE27F9 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		65BCD8332E339F3800DE27F9 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		65BCD8352E339F3800DE27F9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		65BCD8372E339F3800DE27F9 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BCD82A2E339F3800DE27F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 65BCD7E02E339D6500DE27F9 /* Project object */;
+}
